@@ -1,0 +1,18 @@
+//utills
+@import './utills/var';
+@import './utills/mixins';
+
+//base
+@import './base/reset';
+@import './base/preset';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+//pages
+@import './pages/flex1';
+@import './pages/flex2';
+@import './pages/flex3';
+@import './pages/flex4';
+@import './pages/flex5';

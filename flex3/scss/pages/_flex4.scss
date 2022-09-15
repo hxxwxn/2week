@@ -1,0 +1,105 @@
+#flex4 {
+    margin: 10px 0;
+
+    .box1 {
+        display: flex;
+        gap: 10px;
+        div {
+            height: 150px;
+            background: #ccc;
+            flex: 1;
+            &:last-child {
+                position: relative;
+                .btn {
+                    @include position('vt');
+                    width: 40px;
+                    height: 40px;
+                    background: #fff;
+                    &.next {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .box2 {
+        background: hotpink;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .box3 {
+        padding: 10px;
+        background: #ccc;
+        ul {
+            padding: 10px;
+            background: #fff;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            li {
+                background: #999;
+                height: 100px;
+                &:nth-child(1){
+                    width: calc(70% - 5px);
+                }
+                &:nth-child(2){
+                    width: calc(30% - 5px);
+                }
+                &:nth-child(3){
+                    width: calc(20% - 5px);
+                }
+                &:nth-child(4){
+                    width: calc(80% - 5px);
+                }
+            }
+        }
+    }
+
+    .box4 {
+        display: flex;
+        background: #ccc;
+        margin: 10px 0;
+        padding: 10px;
+        justify-content: space-between;
+        h2 {
+            line-height: 50px;
+        }
+        .navi {
+            display: flex;
+            a {
+                width: 50px;
+                height: 50px;
+                background: #fff;
+            }
+        }
+    }
+
+    .box5 {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            li {
+                width: calc((100% - 30px) / 4);
+                padding: 10px;
+                box-sizing: border-box;
+                background: yellowgreen;
+
+                strong {
+                    display: block;
+                    margin: 10px 0;
+                    background: #fff;
+                    padding: 10px;
+                }
+                p {
+                    background: #fff;
+                    padding: 10px;
+                    @include ellipse()
+                }
+            }
+        }
+    }
+}

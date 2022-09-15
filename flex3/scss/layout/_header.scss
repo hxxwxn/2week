@@ -1,0 +1,72 @@
+.f1_hdr {
+    height: 100px;
+    background: lavender;
+}
+
+.f2_hdr {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: lavender;
+}
+
+.f3_hdr {
+    position: relative;
+    background: lavender;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        @include position('ct');
+        width: 50px;
+        height: 50px;
+        background: #fff;
+
+        a {
+            display: block;
+            height: inherit;
+            line-height: 50px;
+            text-align: center;
+        }
+    }
+
+    .social {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+.f4_hdr {
+    background: lavender;
+    height: 100px;
+}
+
+
+.f5_hdr {
+    .top {
+        position: relative;
+        height: 200px;
+        background: lavender;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            @include position('ct');
+        }
+    }
+
+    .bottom {
+        background: #ccc;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+            gap: 20px;
+        }
+    }
+}

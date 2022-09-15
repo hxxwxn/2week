@@ -1,0 +1,55 @@
+#flex5 {
+    width: 800px;
+    margin: 10px auto;
+    .box1 {
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #ccc;
+        .top {
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .bottom {
+            display: flex;
+            .left {
+                flex: 1;
+                display: flex;
+                margin-right: 10px;
+                gap: 10px;
+                flex-wrap: wrap;
+                li {
+                    width: calc((100% - 20px) / 3);
+                    height: 100px;
+                    background: #fff;
+                }
+            }
+            .right {
+                width: 150px;
+                background: #fff;
+            }
+        }
+    }
+
+    .box2 {
+        background: #ccc;
+        padding: 10px;
+        li+li {
+            margin-top: 10px;
+        }
+        a {
+            display: flex;
+            img {
+                width: 150px;
+                height: 150px;
+                flex-shrink: 0;
+            }
+            p {
+                background: #fff;
+                margin-left: 10px;
+                flex: 1;
+                @include ellipse(5,1.5)
+            }
+        }
+    }
+}

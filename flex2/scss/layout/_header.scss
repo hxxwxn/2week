@@ -1,0 +1,77 @@
+.flex1_hdr {
+    background: hotpink;
+    height: 100px;
+}
+
+.flex2_hdr {
+    display: flex;
+    position: fixed;
+    background: hotpink;
+    width: 150px;
+    height: 100%;
+}
+
+.f3_hdr {
+    height: 200px;
+    background: hotpink;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        @include position('ct');
+        width: 100px;
+        height: 50px;
+        background: #fff;
+        a {
+            display: block;
+            height: inherit;
+        }
+    }
+    .social {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+    }
+    
+}
+
+.f4_hdr {
+    height: 100px;
+    background: hotpink;
+}
+
+.f5_hdr {
+    .top {
+        display: flex;
+        position: relative;
+        background: hotpink;
+        height: 250px;
+        justify-content: space-between;
+        h1 {
+            @include position('ct');
+            width: 100px;
+            height: 50px;
+            background: #fff;
+            a {
+                display: block;
+                height: inherit;
+            }
+        }
+        .social {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+        }
+        
+    }
+
+    .bottom {
+        background: lavenderblush;
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            line-height: 50px;
+        }
+    }
+}

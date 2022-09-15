@@ -1,0 +1,18 @@
+.f1_body, .f2_body {
+    background: #ccc;
+    position: relative;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 800px;
+}
