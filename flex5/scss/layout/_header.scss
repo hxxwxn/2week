@@ -1,0 +1,64 @@
+.f1_hdr, .f4_hdr {
+    height: 100px;
+    background: #c8eaff;
+}
+
+.f2_hdr {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: #c8eaff;
+}
+
+.f3_hdr {
+    position: relative;
+    display: flex;
+    height: 200px;
+    background: #c8eaff;
+    justify-content: space-between;
+    h1 {
+        @include position('ct');
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        a{
+            display: block;
+            height: inherit;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+    .social {
+        background: #fff;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.f5_hdr {
+    .top {
+        position: relative;
+        display: flex;
+        height: 200px;
+        background: #c8eaff;
+        justify-content: space-between;
+        h1 {
+            @include position('ct');
+        }
+        .social {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+        }
+    }
+
+    .bottom {
+        background: #ccc;
+        ul {
+            display: flex;
+            gap: 20px;
+            line-height: 50px;
+            justify-content: center;
+        }
+    }
+}

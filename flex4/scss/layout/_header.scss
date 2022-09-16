@@ -1,0 +1,44 @@
+.f1_hdr, .f4_hdr {
+    height: 100px;
+    background: lavenderblush;
+}
+
+.f2_hdr {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: lavenderblush;
+}
+
+.f3_hdr {
+    position: relative;
+    height: 200px;
+    background: lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        @include position('ct');
+    }
+}
+
+.f5_hdr {
+    .top {
+        position: relative;
+        display: flex;
+        height: 200px;
+        justify-content: space-between;
+        background: lavenderblush;
+        h1 {
+            @include position('ct');
+        }
+    }
+    .bottom {
+        background: #ccc;
+        ul {
+            display: flex;
+            line-height: 50px;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

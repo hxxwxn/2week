@@ -1,0 +1,63 @@
+#flex5 {
+    margin: 10px auto;
+    width: 800px;
+    > * + * {
+        margin-top: 10px;
+    }
+    .box1 {
+        padding: 10px;
+        background: #ddd;
+        .top {
+            background: #fff;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .bottom {
+            padding: 10px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            .left {
+                flex: 1;
+                margin-right: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                li {
+                    width: calc((100% - 20px) / 3);
+                    height: 100px;
+                    background: #ccc;
+                }
+            }
+            .right {
+                width: 150px;
+                background: #ccc;
+            }
+        }
+    }
+
+    .box2 {
+        padding: 10px;
+        background: #ccc;
+        li + li {
+            margin-top: 10px;
+        }
+        a {
+            display: flex;
+
+            img {
+                width: 150px;
+                height: 150px;
+                flex-shrink: 0;
+            }
+
+            p {
+                margin-left: 10px;
+                background: #fff;
+                height: 150px;
+                @include ellipse(5,1.85)
+            }
+        }
+    }
+}

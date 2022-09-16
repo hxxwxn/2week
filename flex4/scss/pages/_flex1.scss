@@ -1,0 +1,42 @@
+#flex1 {
+    width: 800px;
+    margin: 10px auto;
+    > * + * {
+        margin-top: 10px;
+    }
+    .box1 {
+        background: #ccc;
+        height: 200px;
+    }
+    .box2 {
+        display: flex;
+        gap: 10px;
+        div{
+            flex: 1;
+            height: 100px;
+            background: #ccc;
+        }
+    }
+
+    .box3 {
+        display: flex;
+        gap: 10px;
+        div {
+            flex: 1;
+            height: 100px;
+            background: #ccc;
+        }
+    }
+
+    .box4 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #888;
+        div {
+            width: calc(50% - 5px);
+            height: 100px;
+            background: #ccc;
+        }
+    }
+}
