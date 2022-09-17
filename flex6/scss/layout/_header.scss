@@ -1,0 +1,44 @@
+.f1_hdr, .f4_hdr {
+    height: 100px;
+    background: lemonchiffon;
+}
+
+.f2_hdr {
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    background: lemonchiffon;
+}
+
+.f3_hdr {
+    display: flex;
+    position: relative;
+    height: 200px;
+    background: lemonchiffon;
+    justify-content: space-between;
+    h1 {
+        @include position('ct');
+    }
+}
+
+.f5_hdr {
+    .top {
+        position: relative;
+        display: flex;
+        height: 200px;
+        background: lemonchiffon;
+        justify-content: space-between;
+        h1 {
+            @include position('ct');
+        }
+    }
+    .bottom {
+        background: #ccc;
+        ul {
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+#flex4 {
+    margin: 10px 0;
+    .box1 {
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: calc(50% - 5px);
+            background: #ccc;
+            height: 200px;
+            &:last-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .prev {
+                    margin-left: 10px;
+                }
+
+                .next {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .box2 {
+        background: #ccc;
+        margin: 10px 0;
+        height: 100px;
+    }
+
+    .box3 {
+        padding: 10px;
+        background: #ccc;
+        ul {
+            display: flex;
+            padding: 10px;
+            background: #fff;
+            flex-wrap: wrap;
+            gap: 10px;
+            li {
+                background: #ccc;
+                height: 100px;
+                &:nth-child(1){
+                    width: calc(70% - 5px);
+                }
+                &:nth-child(2){
+                    width: calc(30% - 5px);
+                }
+                &:nth-child(3){
+                    width: calc(20% - 5px);
+                }
+                &:nth-child(4){
+                    width: calc(80% - 5px);
+                }
+            }
+        }
+    }
+
+    .box4 {
+        margin: 10px 0;
+        padding: 10px;
+        background: #ccc;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            line-height: 50px;
+        }
+        .navi {
+            display: flex;
+            a {
+                width: 50px;
+                height: 50px;
+                background: #fff;
+            }
+        }
+    }
+
+    .box5 {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            li {
+                width: calc((100% - 30px) / 4);
+                a {
+                    display: block;
+                    padding: 10px;
+                    background: yellowgreen;
+                    strong {
+                        padding: 10px;
+                        margin: 10px 0;
+                        display: block;
+                        background: #fff;
+                    }
+
+                    p{
+                        padding: 10px;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
