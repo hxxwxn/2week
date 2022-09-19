@@ -1,0 +1,59 @@
+.f1_hdr,
+.f4_hdr {
+    height: 100px;
+    background: hotpink;
+}
+
+.f2_hdr {
+    position: fixed;
+    width: 150px;
+    background: hotpink;
+    height: 100%;
+}
+
+.f3_hdr {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    background: hotpink;
+
+    h1 {
+        @include position('ct')
+    }
+
+    .social {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+    }
+}
+
+.f5_hdr {
+    .top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        background: hotpink;
+
+        h1 {
+            @include position('ct')
+        }
+
+        .social {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+        }
+    }
+    .bottom {
+        ul {
+            display: flex;
+            background: #ccc;
+            line-height: 50px;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+}
