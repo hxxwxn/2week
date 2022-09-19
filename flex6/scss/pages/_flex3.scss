@@ -41,7 +41,7 @@
             gap: 10px;
             li {
                 flex: 1;
-                min-width: 0;
+                min-width: 0;/* 말줄임을 위해 */
                 a {
                     padding: 10px;
                     display: block;

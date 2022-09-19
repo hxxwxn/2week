@@ -94,6 +94,11 @@ img {
   justify-content: center;
 }
 
+.f6_hdr {
+  height: 100px;
+  background: #ccc;
+}
+
 footer {
   background: lemonchiffon;
   height: 100px;
@@ -415,4 +420,96 @@ footer {
   flex: 1;
   margin-left: 10px;
   background: #fff;
+}
+
+#flex6 {
+  margin: 10px 0;
+}
+#flex6 .box1 .wrap {
+  position: relative;
+  display: flex;
+  height: 200px;
+  gap: 10px;
+}
+#flex6 .box1 .wrap div {
+  flex: 1;
+  background: #ccc;
+}
+#flex6 .box1 .wrap .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#flex6 .box1 .wrap .btn.prev {
+  left: 10px;
+}
+#flex6 .box1 .wrap .btn.next {
+  right: 10px;
+}
+#flex6 .box1 .wrap .pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+#flex6 .box1 .wrap .pagination span {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+#flex6 .box1 .wrap .pagination span.active {
+  background: #888;
+}
+#flex6 .box2 {
+  background: #ccc;
+  height: 100px;
+  margin: 10px 0;
+}
+#flex6 .box3 .top {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+#flex6 .box3 .top h2 {
+  line-height: 50px;
+}
+#flex6 .box3 .top .navi {
+  display: flex;
+  gap: 10px;
+}
+#flex6 .box3 .top .navi a {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+#flex6 .box3 .bottom {
+  padding: 10px;
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+#flex6 .box3 .bottom div {
+  width: calc(50% - 5px);
+  background: #fff;
+  height: 150px;
+  padding: 10px;
+}
+#flex6 .box3 .bottom div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+#flex6 .box3 .bottom div ul li {
+  flex: 1;
+  background: #888;
+}
+#flex6 .box3 .bottom .right ul {
+  display: flex;
+  flex-direction: row;
 }
